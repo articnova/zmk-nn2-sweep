@@ -44,6 +44,17 @@
 		};
         };
 
+        combos {
+                compatible = "zmk,combos";
+
+                // both left thumb keys
+                combo_OSLSYM {
+                        timeout-ms = <200>;
+                        key-positions = <30 31>;
+                        bindings = <&slm SYM>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
